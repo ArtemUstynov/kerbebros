@@ -66,5 +66,5 @@ def connect_to_fs(name: str, password: str, service_name: str):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    connect_to_fs(input("name: "), getpass("password: "), input("service: "))
-    # connect_to_fs("tom", "file")
+    connect_to_fs(input("name: "), input("password: "), input("service: "))
+# connect_to_fs("tom", "t_pass", "file")

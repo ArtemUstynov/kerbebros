@@ -38,7 +38,9 @@ def process_message(con: socket, addr: tuple):
             msg3 = {"tgs_k": tgs_k, "client": name, "address": addr[0]}
             msg3_e = ch.encrypt_AES(INITIALIZED_PASSWORDS["TGS1"], json.dumps(msg3))
             ch.send_msg(con, msg3_e)
-            con.close()
+        else:
+            print("fokoff", name)
+        con.close()
     except Exception as e:
         con.close()
         print(e)
